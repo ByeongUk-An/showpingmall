@@ -1,11 +1,13 @@
 import {Routes,Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, {useState,useEffect} from "react";
 
 import './App.css';
 import ProductAll from "./page/ProductAll";
 import Login from "./page/Login";
 import ProductDetail from "./page/ProductDetail";
 import NavBar from "./component/NavBar";
+import {authService} from "fbase";
 
 
 //1. 전체상품페이지, 로그인, 상품상세페이지 check
@@ -19,12 +21,24 @@ import NavBar from "./component/NavBar";
 //8. 로그인을 하면 로그아웃이 보이고 로그아웃을 하면 로그인이 보인다
 //9. 상품을 검색할 수 있다.
 function App() {
+  const [init,setInit] = useState(false);
+  const [isLoggedIn,setIsLoggedIn] = useState(false);
+  useEffect(() => {
+    authService.onAuthStateChanged((user)=>{
+      if(user) {
+        setIsLoggedIn(true);
+      }else {
+        setIsLoggedIn(false);
+      }
+      setInit(true);
+    })
+  }, []);
+
   return (
     <>
-    <NavBar/>
+    <NavBar isLoggedIn={isLoggedIn}/>
     <Routes>
-      <Route path="/" element={<ProductAll/>}/>
-      <Route path="/login" element={<Login/>}/>
+      {isLoggedIn ? <Route path="/" element={<ProductAll/>}/> : <Route path="/" element={<Login/>}/>}
       <Route path="/product/:id" element={<ProductDetail/>}/>
     </Routes>
     </>

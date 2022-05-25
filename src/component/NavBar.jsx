@@ -4,12 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = (props) => {
+const NavBar = ({isLoggedIn}) => {
     const menuList = ["아우터","바지","원피스","스커트","스니커즈","가방"];
     const navigate = useNavigate();
 
     const goToLogin = () => {
-        navigate("/login");
+        if(isLoggedIn) {
+
+        }else {
+
+        }
     }
 
     return(
@@ -17,7 +21,7 @@ const NavBar = (props) => {
             <div>
                 <div className="login-button" onClick={goToLogin}>
                     <FontAwesomeIcon className="login-info" icon={faUser} />
-                    <div>로그인</div>
+                    <div>{isLoggedIn ? "로그아웃" : "로그인"}</div>
                 </div>
             </div>
             <h1 className="logo-wrap">
