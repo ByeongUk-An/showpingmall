@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+/*@font-face {*/
+/*    font-family: Cafe24Syongsyong;*/
+/*    src: url("../font/Cafe24Syongsyong.ttf");*/
+/*}*/
+body {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+ul,li {
+    list-style: none;
+}
+.login-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 50px 20px 30px;
+    cursor: pointer;
+}
+.login-button div {
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+}
+.login-container {
+    padding-top: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container form {
+    width: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.logo-wrap {
+    display: flex;
+    justify-content: center;
+}
+.logo-wrap .input-wrap {
+    position: absolute;
+    right: 20px;
+    border-bottom: 1px solid darkgray ;
+    padding-bottom: 5px;
+}
+.logo-wrap .input-search-ico {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.search-input {
+    width: 180px;
+    border: none;
+
+}
+.search-input::placeholder {
+    font-size: 16px;
+}
+.logo-wrap img {
+    width: 150px;
+}
+.menuList-wrap {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid lightgray;
+    border-bottom: 2px solid black;
+}
+.menuList-wrap li {
+    width: 16.666666666666667%;
+    text-align: center;
+    height: 55px;
+    position: relative;
+    line-height: 55px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.menuList-wrap li:hover {
+    background-color: beige;
+}
+.menuList-wrap li:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+}
+.menuList-wrap li:last-child:before {
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-wrap {
+    width: 315px;
+}
+.card-wrap:hover {
+    transform:scale(1.05);
+    transition: 0.3s;
+}
+.card-wrap img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.card-wrap .product-orders {
+    color: red;
+    border: 1px solid red;
+    margin-right: 5px;
+}
+.card-wrap .new-product {
+    color: #fff;
+    background-color: #CDA396;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-wrap .product-orders,
+.card-wrap .new-product {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 14px;
 }
+.card-wrap .product-ioncs {
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-wrap .product-clothes {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.card-wrap .product-clothes:hover {
+    color: darkgray;
+    cursor: pointer;
+}
+.card-wrap .price {
+    font-size: 22px;
 }
