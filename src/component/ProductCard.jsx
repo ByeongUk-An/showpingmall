@@ -1,9 +1,21 @@
 import React from 'react';
+import {useNavigate} from "react-router-dom";
 
-const ProductCard = ({item}) => {
+const ProductCard = ({item,isLoggedIn}) => {
+    const navigate = useNavigate();
+
+    const goToDetailMove = () => {
+        console.log("ProductCard",isLoggedIn);
+        
+        if(isLoggedIn) {
+            navigate("/product")
+        }else {
+            navigate("/")
+        }
+    }
     return (
         <>
-            <div className="card-wrap">
+            <div className="card-wrap" onClick={goToDetailMove}>
                 <img src={item && item.img} alt="강아지"/>
                 <div className="product-ioncs">
                     <span className="product-orders">주문폭주</span>

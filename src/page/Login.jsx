@@ -1,9 +1,14 @@
 import React,{useState} from 'react';
 import {Form,Button,Container} from "react-bootstrap"
+import {createUserWithEmailAndPassword,signInWithEmailAndPassword,getAuth,GoogleAuthProvider,GithubAuthProvider,signInWithPopup} from "firebase/auth"
 import {authService} from "../fbase";
-import {createUserWithEmailAndPassword,signInWithEmailAndPassword,getAuth} from "firebase/auth"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ToastContainer, toast } from 'react-toastify';
+import {faGoogle,faGithub} from "@fortawesome/free-brands-svg-icons";
+import { GoogleLoginButton,GithubLoginButton } from "react-social-login-buttons";
 
-const Login = (props) => {
+
+const Login = ({isLoggedIn}) => {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [newAccount,setNewAccount] = useState(true);
@@ -25,21 +30,42 @@ const Login = (props) => {
                 // 계정생성
                 const auth = getAuth();
                 data = await createUserWithEmailAndPassword(auth,email,password);
+                // toast("계정이 생성되었으며, 로그인에 성공하셨습니다.");
             }else {
                 // 로그인
                 const auth = getAuth();
                 data = await signInWithEmailAndPassword(auth,email,password);
+                // toast("계정이 생성되었으며, 로그인에 성공하셨습니다.");
             }
-            console.log(data);
+
         }catch(error) {
             setError(error.message);
         }
     }
 
+
+
     const toggleAccount = () => setNewAccount((prev)=>!prev);
+    const onSocialClick = async (name) => {
+
+        let provider;
+        if(name === "google") {
+
+            provider = new GoogleAuthProvider();
+
+        }else if(name === "github") {
+            provider = new GithubAuthProvider();
+        }
+
+        const data = await signInWithPopup(authService,provider);
+        console.log(data);
+    }
+
+
 
     return (
         <>
+
            <Container className="login-container">
                <Form onSubmit={onSubmit}>
                    <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -52,25 +78,23 @@ const Login = (props) => {
                        <Form.Label>비밀번호</Form.Label>
                        <Form.Control type="password" name="password" placeholder="Password" defaultValue={password} onChange={onChange} />
                    </Form.Group>
-                   <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                       <Form.Check type="checkbox" label="Check me out" />
-                   </Form.Group>
-                   <div>{error}</div>
+
+
                    <div className="form-btn">
-                       <Button variant="dark" type="submit" className="mb-3" >
-                           {newAccount ? "계정생성" : "로그인"}
-                       </Button>
+                       {newAccount ? <Button variant="dark" type="submit" className="mb-3">계정생성</Button> : <Button  name="login" variant="dark" type="submit" className="mb-3">로그인</Button> }
                    </div>
-                   <div onClick={toggleAccount} >
-                       {newAccount ? "로그인을 하시겠습니까?" : "계정생성을 생성하시겠습니까?"}
+                   <div onClick={toggleAccount} className="mb-3 toggle-account" >
+                       {newAccount ? "로그인을 하시겠습니까?" : "계정생성을 생성하시겠습니까?"} <span>Click!!</span>
                    </div>
 
                </Form>
                <div className="social-btn">
-                   <button>Continue with Google</button>
-                   <button>Continue with Github</button>
+                   <GoogleLoginButton onClick={()=>onSocialClick('google')} div="google"/>
+                   <GithubLoginButton onClick={()=>onSocialClick('github')} div="github"/>
                </div>
+               <ToastContainer/>
            </Container>
+
         </>
     )
 }

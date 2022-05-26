@@ -33,13 +33,13 @@ function App() {
       setInit(true);
     })
   }, []);
-
+  console.log("App",isLoggedIn)
   return (
     <>
     <NavBar isLoggedIn={isLoggedIn}/>
     <Routes>
-      {isLoggedIn ? <Route path="/" element={<ProductAll/>}/> : <Route path="/" element={<Login/>}/>}
-      <Route path="/product/:id" element={<ProductDetail/>}/>
+      {isLoggedIn ? <Route path="/" element={<ProductAll isLoggedIn={isLoggedIn}/>} /> : <Route path="/" element={<Login/>} isLoggedIn={isLoggedIn}/>}
+      <Route path="/product/:id" element={<ProductDetail isLoggedIn={isLoggedIn} />}/>
     </Routes>
     </>
   );

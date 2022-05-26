@@ -14,16 +14,21 @@ body {
 ul,li {
     list-style: none;
 }
-.login-button {
+.login-wrap {
     display: flex;
     justify-content: flex-end;
+}
+.login-button {
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    /*align-items: center;*/
     margin: 30px 50px 20px 30px;
     cursor: pointer;
 }
-.login-button div {
+.login-button button {
     margin-left: 5px;
-    position: relative;
-    top: -3px;
+    border: none;
+    background-color: transparent;
 }
 .login-container {
     padding-top: 100px;
@@ -43,24 +48,38 @@ ul,li {
 }
 .social-btn {
     display: flex;
-    flex-direction: column;
+
 }
 .social-btn button {
-    width: 200px;
+    border: none;
+    padding: 1em;
+    width: 230px;
     margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #333333;
+    color: #fff;
 }
 .social-btn button:first-child {
     margin-right: 15px;
+    background-color: white;
+    color: #000;
 }
-
+.social-btn span {
+    margin-left: 5px;
+}
+.toggle-account {
+    cursor: pointer;
+}
 
 .logo-wrap {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .logo-wrap .input-wrap {
     position: absolute;
     right: 20px;
+    top: 60px;
     border-bottom: 1px solid darkgray ;
     padding-bottom: 5px;
 }
@@ -115,6 +134,7 @@ ul,li {
 
 .card-wrap {
     width: 315px;
+    cursor: pointer;
 }
 .card-wrap:hover {
     transform:scale(1.05);

@@ -3,8 +3,10 @@ import ProductCard from "../component/ProductCard";
 import {Container,Row,Col} from "react-bootstrap";
 
 
-const ProductAll = (props) => {
+
+const ProductAll = ({isLoggedIn}) => {
     const [productList,setProductList] = useState([]);
+    console.log("ProductAll",isLoggedIn)
     const getProducts = async () => {
         let url = `http://localhost:5000/products`;
         let response = await fetch(url);
@@ -16,6 +18,7 @@ const ProductAll = (props) => {
     useEffect(() => {
         getProducts();
     }, []);
+
 
 
     return (
