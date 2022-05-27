@@ -5,10 +5,8 @@ const ProductCard = ({item,isLoggedIn}) => {
     const navigate = useNavigate();
 
     const goToDetailMove = () => {
-        console.log("ProductCard",isLoggedIn);
-        
         if(isLoggedIn) {
-            navigate("/product")
+            navigate(`/product/${item.id}`)
         }else {
             navigate("/")
         }

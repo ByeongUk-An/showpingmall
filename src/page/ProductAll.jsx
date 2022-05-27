@@ -6,7 +6,7 @@ import {Container,Row,Col} from "react-bootstrap";
 
 const ProductAll = ({isLoggedIn}) => {
     const [productList,setProductList] = useState([]);
-    console.log("ProductAll",isLoggedIn)
+
     const getProducts = async () => {
         let url = `http://localhost:5000/products`;
         let response = await fetch(url);
@@ -28,7 +28,7 @@ const ProductAll = ({isLoggedIn}) => {
                 <Row>
                     {productList.map((menu,index)=>(
                         <Col lg={3} key={index}>
-                            <ProductCard item={menu}  />
+                            <ProductCard item={menu} isLoggedIn={isLoggedIn}  />
                         </Col>
                     ))}
 

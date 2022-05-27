@@ -40,6 +40,7 @@ function App() {
     <Routes>
       {isLoggedIn ? <Route path="/" element={<ProductAll isLoggedIn={isLoggedIn}/>} /> : <Route path="/" element={<Login/>} isLoggedIn={isLoggedIn}/>}
       <Route path="/product/:id" element={<ProductDetail isLoggedIn={isLoggedIn} />}/>
+
     </Routes>
     </>
   );
