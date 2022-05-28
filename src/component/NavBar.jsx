@@ -18,6 +18,15 @@ const NavBar = ({isLoggedIn}) => {
         navigate("/");
     }
 
+    const search = (event) => {
+        if(event.key == "Enter") {
+            // 입력한 검색어를 읽어와서
+            let keyword = event.target.value;
+            // URL을 바꿔준다.
+            navigate(`/?q=${keyword}`);
+        }
+    }
+
     return(
         <>
             <div className="login-wrap">
@@ -30,7 +39,7 @@ const NavBar = ({isLoggedIn}) => {
                 <img src="images/logo.png" alt="로고이미지" onClick={onLogoClickMove}/>
                 <div className="input-wrap">
                     <FontAwesomeIcon icon={faSearch} className="input-search-ico" />
-                    <input className="search-input" type="text" placeholder="원피스"/>
+                    <input className="search-input" type="text" placeholder="원피스" onKeyPress={(event)=>search(event)}/>
                 </div>
             </h1>
             <div>

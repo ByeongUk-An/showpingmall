@@ -176,3 +176,8 @@ ul,li {
 .card-wrap .price {
     font-size: 22px;
 }
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
+}
