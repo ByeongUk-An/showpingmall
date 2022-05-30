@@ -8,7 +8,7 @@ const ProductCard = ({item,isLoggedIn}) => {
         if(isLoggedIn) {
             navigate(`/product/${item.id}`)
         }else {
-            navigate("/")
+            navigate("/login")
         }
     }
     return (

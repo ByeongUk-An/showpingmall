@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
 import {faGoogle,faGithub} from "@fortawesome/free-brands-svg-icons";
 import { GoogleLoginButton,GithubLoginButton } from "react-social-login-buttons";
+import {useNavigate} from "react-router-dom";
 
 
 const Login = ({isLoggedIn}) => {
@@ -13,6 +14,8 @@ const Login = ({isLoggedIn}) => {
     const [password,setPassword] = useState("");
     const [newAccount,setNewAccount] = useState(true);
     const [error,setError] = useState("");
+
+    const navigate = useNavigate();
 
     const onChange = (event) => {
         const {name,value} = event.target;
@@ -31,11 +34,13 @@ const Login = ({isLoggedIn}) => {
                 const auth = getAuth();
                 data = await createUserWithEmailAndPassword(auth,email,password);
                 // toast("계정이 생성되었으며, 로그인에 성공하셨습니다.");
+                navigate("/");
             }else {
                 // 로그인
                 const auth = getAuth();
                 data = await signInWithEmailAndPassword(auth,email,password);
                 // toast("계정이 생성되었으며, 로그인에 성공하셨습니다.");
+                navigate("/");
             }
 
         }catch(error) {
@@ -52,9 +57,10 @@ const Login = ({isLoggedIn}) => {
         if(name === "google") {
 
             provider = new GoogleAuthProvider();
-
+            navigate("/");
         }else if(name === "github") {
             provider = new GithubAuthProvider();
+            navigate("/");
         }
 
         const data = await signInWithPopup(authService,provider);

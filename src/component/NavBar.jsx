@@ -10,9 +10,17 @@ const NavBar = ({isLoggedIn}) => {
     const navigate = useNavigate();
 
 
-    const onLogOutClick = () => {
-        authService.signOut();
-        navigate("/");
+    const onLogOutClick = (event) => {
+
+        let {innerHTML} = event.target;
+        if(innerHTML == "로그인") {
+            navigate("/login");
+        }else if(innerHTML == "로그아웃") {
+            authService.signOut();
+            navigate("/login");
+        }
+        
+
     }
     const onLogoClickMove = () => {
         navigate("/");
@@ -31,8 +39,8 @@ const NavBar = ({isLoggedIn}) => {
         <>
             <div className="login-wrap">
                 <div className="login-button" >
-                    {isLoggedIn ? <FontAwesomeIcon className="login-info" icon={faUser} /> : ""}
-                    <button onClick={onLogOutClick}>{isLoggedIn ? "로그아웃":""}</button>
+                    {isLoggedIn ? "" : <FontAwesomeIcon className="login-info" icon={faUser} />}
+                    <button onClick={onLogOutClick}>{isLoggedIn ? "로그아웃":"로그인"}</button>
                 </div>
             </div>
             <h1 className="logo-wrap">

@@ -38,7 +38,9 @@ function App() {
     <>
     <NavBar isLoggedIn={isLoggedIn}/>
     <Routes>
-      {isLoggedIn ? <Route path="/" element={<ProductAll isLoggedIn={isLoggedIn}/>} /> : <Route path="/" element={<Login/>} isLoggedIn={isLoggedIn}/>}
+      
+      <Route path="/" element={<ProductAll isLoggedIn={isLoggedIn}/>}/>
+      <Route path="/login" element={<Login isLoggedIn={isLoggedIn}/>}/>
       <Route path="/product/:id" element={<ProductDetail isLoggedIn={isLoggedIn} />}/>
 
     </Routes>
