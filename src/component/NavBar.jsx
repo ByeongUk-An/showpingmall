@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {useNavigate,Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
@@ -6,9 +6,9 @@ import {faSearch} from "@fortawesome/free-solid-svg-icons";
 import {authService} from "../fbase";
 
 const NavBar = ({isLoggedIn}) => {
-    const menuList = ["아우터","바지","원피스","스커트","스니커즈","가방"];
+    const menuList = ["shirts","pants","dress","shoes","jacket","Q&A 게시판"];
     const navigate = useNavigate();
-
+    const [clothes,setClothes] = useState("");
 
     const onLogOutClick = (event) => {
 
@@ -35,6 +35,13 @@ const NavBar = ({isLoggedIn}) => {
         }
     }
 
+    const clothesParams = (event) => {
+        let clothes = event.target.innerHTML;
+        if(clothes != "") {
+            navigate(`/producttype/?type=${clothes}`)
+        }
+    }
+
     return(
         <>
             <div className="login-wrap">
@@ -54,7 +61,7 @@ const NavBar = ({isLoggedIn}) => {
                 <div>
                     <ul className="menuList-wrap">
                         {menuList.map((menu,index)=> {
-                            return <li key={index}>{menu}</li>
+                            return <li className="menu-list" key={index} onClick={clothesParams}>{menu}</li>
                         })}
                     </ul>
                 </div>

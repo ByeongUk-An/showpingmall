@@ -14,7 +14,7 @@ const ProductCard = ({item,isLoggedIn}) => {
     return (
         <>
             <div className="card-wrap" onClick={goToDetailMove}>
-                <img src={item && item.img} alt="강아지"/>
+                <img src={item && item.img} alt="의류"/>
                 <div className="product-ioncs">
                     <span className="product-orders">주문폭주</span>
                     <span className="new-product">{item && item.new == true ? '신제품' : "인기제품"}</span>

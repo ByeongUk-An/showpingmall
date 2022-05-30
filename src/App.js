@@ -7,6 +7,7 @@ import ProductAll from "./page/ProductAll";
 import Login from "./page/Login";
 import ProductDetail from "./page/ProductDetail";
 import NavBar from "./component/NavBar";
+import ProductType from "./page/ProductType";
 import {authService} from "fbase";
 
 
@@ -38,11 +39,11 @@ function App() {
     <>
     <NavBar isLoggedIn={isLoggedIn}/>
     <Routes>
-      
+
       <Route path="/" element={<ProductAll isLoggedIn={isLoggedIn}/>}/>
       <Route path="/login" element={<Login isLoggedIn={isLoggedIn}/>}/>
       <Route path="/product/:id" element={<ProductDetail isLoggedIn={isLoggedIn} />}/>
-
+      <Route path="/producttype" element={<ProductType isLoggedIn={isLoggedIn} />}/>
     </Routes>
     </>
   );

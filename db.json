@@ -2,53 +2,75 @@
   "products":[
     {
       "id":0,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/ec/ef/ecef9d77c56c519e24a76b83331ae2c18f73f50d.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]",
-      "title":"벨티드 트윌 코트",
-      "price":99900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/1f/f7/1ff76c3963dcad59a9682dd6727fba4e11ab5f61.jpg],origin[dam],category[],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]",
+      "title":"패턴 캠프 셔츠",
+      "price":"14,900",
       "choice":true,
       "new":true,
-      "size":["S","M","L"]
+      "size":["S","M","L"],
+      "clothes": "shirts",
+      "disc" : "비스코스 소재의 반소매 패턴 셔츠. 캠프 칼라. 버튼단이 없는 프렌치 프런트 스타일. 스트레이트 헴라인. 여유 있는 핏 - 넉넉한 핏으로 활동이 편안한 스트레이트 라인.",
+      "pit" : "여유 있는 핏",
+      "stability": "주의! 작은 부품이 탈락되면 삼킬 수 있음",
+      "prdnum" : "0656677035"
 
     },
     {
       "id":1,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/af/50/af50afa939c28ba24fd263fb573b4ad5f0858b14.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title":"슬림핏 맘 하이웨이스트 앵클 진",
-      "price":29900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F19%2F50%2F19507be6c79d7310890b9e7ffc5521c6c5dec028.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "title":"패턴 블루 셔츠",
+      "price":"29,900",
       "choice":true,
       "new":true,
-      "size":["S","M","L"]
+      "size":["S","M","L"],
+      "clothes": "shirts",
+      "disc" : "패턴이 있는 코튼 소재의 릴랙스핏 반소매 셔츠. 캠프 칼라. 버튼단이 없는 프렌치 프런트 스타일. 뒷면 요크. 드롭 숄더. 옆면 하단에 트임이 있는 스트레이트 헴라인.",
+      "pit" : "여유 있는 핏",
+      "stability": "면 100%",
+      "prdnum" : "1036741003"
 
     },
     {
       "id":2,
       "img":"https://lp2.hm.com/hmgoepprod?set=source[/7a/49/7a4980a16ce6888b33481763ea1f0a05807f50d1.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]",
       "title":"와이드 하이웨이스트 진",
-      "price":39900,
+      "price":"39,900",
       "choice":false,
       "new":true,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "pants",
+      "disc" : "워싱처리된 5포켓 코튼 데님 진. 하이웨이스트. 지퍼와 버튼 클로징. 와이드한 스트레이트 레그.",
+      "pit" : "여유 있는 핏",
+      "stability": "면 100%",
+      "prdnum" : "1058033001"
     },
     {
       "id":3,
       "img":"https://lp2.hm.com/hmgoepprod?set=source[/10/34/10341727ce95aae07695e7b13392a1d802ffe1f3.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]",
       "title":"퍼프 슬리브 드레스",
-      "price":39900,
+      "price":"39,900",
       "choice":false,
       "new":true,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "dress",
+      "disc" : "스웨트하트 네크라인의 미니 원피스. 입체적으로 마감된 컵. 앞면 상단에 컷아웃 디테일과 끈을 묶는 작은 트임이 있음. 퍼프 스타일의 반소매. 어깨와 소맷단이 신축성 있게 처리됨. 한쪽 옆면 히든 지퍼. 가슴 아래 솔기. 세미 플레어 라인.",
+      "pit" : "여유 있는 핏",
+      "stability": "구성폴리에스터 98%, 엘라스테인 2%",
+      "prdnum" : "0963236010"
     },
     {
       "id":4,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/0f/46/0f463d61dbddb48bea8e329d9693f17fbff7f925.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"프릴 디테일 블라우스",
-      "price":29900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/bc/76/bc76603eae32cd952d6b56de25552d61925cfb37.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"버튼 프런트 코튼 드레스",
+      "price":"34,900",
       "choice":true,
       "new":false,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "dress",
+      "disc" : "코튼 소재의 V넥 반소매 미니 원피스. 앞면에 요크와 버튼이 있음. 턴업 스타일로 고정된 소맷단. 플리츠가 잡힌 허리 솔기 아래는 플레어 라인으로 마감됨. 안감 생략.",
+      "pit" : "슬림한 바디 핏",
+      "stability": "면 100%",
+      "prdnum" : "1078854001"
     },
     {
       "id":5,
@@ -57,88 +79,268 @@
       "price":39900,
       "choice":false,
       "new":false,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "dress",
+      "disc" : "자카드 소재의 긴소매 칼라 미디 원피스. 앞면 버튼 클로징. 드롭 숄더. 소맷단 트임. 옆면 하단에 긴 트임이 있음. 안감 생략.",
+      "pit" : "겉감: 재생 폴리에스터 100%",
+      "stability": "구성폴리에스터 100%",
+      "prdnum" : "1018504016"
     },
     {
       "id":6,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/66/eb/66ebc8ebbdc939176137327d43db5c22d2d0292f.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"더블 브레스티드 재킷",
-      "price":39900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/5f/97/5f97f1845f3a5314d6fc8447782865bc116fe5a8.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"V-nect slip dress",
+      "price":"39,900",
       "choice":true,
       "new":false,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "dress",
+      "disc" : "Calf-length dress in woven fabric with narrow, adjustable shoulder straps, a V-neck and gathers at the top of the front. Concealed zip in one side. Unlined.",
+      "pit" : "겉감: 재생 폴리에스터 100%",
+      "stability": "폴리에스터 100%",
+      "prdnum" : "1074871004"
     },
     {
       "id":7,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/be/3c/be3cfb9b7d99937f42b99b859dee546f8a3216b7.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"오버사이즈 집업 후디",
-      "price":99900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/1f/41/1f41362699ab43336449a80500448d06dc1bc077.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"벌룬 슬리브 드레스",
+      "price":"59,900",
       "choice":false,
       "new":true,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "dress",
+      "disc" : "Calf-length dress in woven fabric with narrow, adjustable shoulder straps, a V-neck and gathers at the top of the front. Concealed zip in one side. Unlined.",
+      "pit" : "겉감: 재생 폴리에스터 100%",
+      "stability": "폴리에스터 100%",
+      "prdnum" : "1074871004"
     },
     {
       "id":8,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/ad/e9/ade9a2fa40f186b2db875ceb35ca279ca99b300a.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"프린트 크롭트 탑",
-      "price":14900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/7d/02/7d028760045fa8888f36e53c49f17b5d98f4bbbe.jpg],origin[dam],category[ladies_dresses_maxidresses],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"홀터넥 시폰 드레스",
+      "price":"79,900",
       "choice":true,
       "new":true,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "dress",
+      "disc" : "시폰 소재의 슬리브리스 롱 원피스. 상단이 좁게 재단된 홀터넥 스타일. 상단이 짧은 프릴로 장식된 스탠드 칼라. 목 뒷면 버튼 클로징. 뒷면이 오픈되었으며, 허리 솔기에 고무밴드가 내장됨. 부드럽게 드레이핑되는 플레어 라인의 하단. 안감 부착.",
+      "pit" : "겉감: 재생 폴리에스터 100%",
+      "stability": "폴리에스터 100%",
+      "prdnum" : "1059777003"
     },
     {
       "id":9,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/44/a9/44a926e37e57244c829c3f7a049fc8aa629d276e.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"프린트 티셔츠",
-      "price":19900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/9d/15/9d1583f2132f6db3695050879c16d06bf76fef7d.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"시폰 플리츠 드레스",
+      "price":"69,900",
       "choice":false,
       "new":true,
-      "size":["S","M","L"]
-
+      "size":["S","M","L"],
+      "clothes": "dress",
+      "disc" : "플리츠가 잡힌 가벼운 시폰 소재의 롱 원피스. 릴랙스핏. 앞뒷면 V넥. 길이 조절 가능한 가느다란 어깨 스트랩. 허리 부분의 가는 끈을 묶는 스타일. 하단은 A라인으로 마감됨. 안감 부착.",
+      "pit" : "여유 있는 핏",
+      "stability": "겉감: 폴리에스터 100%안감: 폴리에스터 100%",
+      "prdnum" : "1070010001"
     },
     {
       "id":10,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/fa/54/fa547c437bf08076aa46dd66f1a2e6a2cf4a4e3e.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"와이드 트윌 팬츠",
-      "price":19900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/e4/86/e486db002f7181956fdabf1ebfa0d3eb3156a874.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"플립플랍",
+      "price":"29,900",
       "choice":true,
       "new":false,
-      "size":["S","M","L"]
-
+      "size":["240","245","250","255","260","265","270"],
+      "clothes": "shoes",
+      "disc" : "스트랩에 패브릭 소재를 사용한 플립플랍 샌들. 패턴이 있는 밑창.",
+      "pit" : "푹신푹신한 느낌",
+      "stability": "본창: 에틸렌 비닐 아세테이트 100%갑피: 인조 가죽 100%",
+      "prdnum" : "0853122001"
     },
     {
       "id":11,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/d1/aa/d1aa5d5d4a3d0699689e7f6187514ad70dc958d6.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"플레어 로라이즈 진",
-      "price":29900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/3e/c5/3ec5f5cb5e34b2ebb557d581d2086b1a5a7b4384.jpg],origin[dam],category[ladies_shoes_sandals_espandrillos],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"퀄티드 슬리퍼 샌들",
+      "price":"29,900",
       "choice":true,
       "new":true,
-      "size":["S","M","L"]
-
+      "size":["240","245","250","255","260","265","270"],
+      "clothes": "shoes",
+      "disc" : "스트랩에 패브릭 소재를 사용한 플립플랍 샌들. 패턴이 있는 밑창.",
+      "pit" : "푹신푹신한 느낌",
+      "stability": "본창: 에틸렌 비닐 아세테이트 100%갑피: 인조 가죽 100%",
+      "prdnum" : "1455214214"
     },
     {
       "id":12,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/ec/6c/ec6c0b3d387ce9b51d68ee440b979291e929c773.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"프린트 크롭트 탑",
-      "price":14900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/f3/4c/f34c3567b33e455709ca963f94becc1e6104e4df.jpg],origin[dam],category[Ladies_shoes_slipon],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"타이 디테일 샌들",
+      "price":"34,900",
       "choice":true,
       "new":true,
-      "size":["S","M","L"]
-
+      "size":["240","245","250","255","260","265","270"],
+      "clothes": "shoes",
+      "disc" : "스트랩에 패브릭 소재를 사용한 플립플랍 샌들. 패턴이 있는 밑창.",
+      "pit" : "푹신푹신한 느낌",
+      "stability": "본창: 에틸렌 비닐 아세테이트 100%갑피: 인조 가죽 100%",
+      "prdnum" : "0853122001"
     },
     {
       "id":13,
-      "img":"https://lp2.hm.com/hmgoepprod?set=source[/37/43/37434b12a61d3e75cb8e7fcb2e0b6cd6ca028c5f.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]",
-      "title":"플레어 로라이즈 진",
-      "price":29900,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/4e/f6/4ef6bb7411112202b63a97e4adb3352e8ed9b72a.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]",
+      "title":"슬리퍼 샌들",
+      "price":"29,900",
       "choice":false,
       "new":false,
-      "size":["S","M","L"]
-
+      "size":["240","245","250","255","260","265","270"],
+      "clothes": "shoes",
+      "disc" : "스트랩에 패브릭 소재를 사용한 플립플랍 샌들. 패턴이 있는 밑창.",
+      "pit" : "푹신푹신한 느낌",
+      "stability": "본창: 에틸렌 비닐 아세테이트 100%갑피: 인조 가죽 100%",
+      "prdnum" : "0853122001"
+    },
+    {
+      "id":14,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/6b/f2/6bf2231e118fc2c627c1d2a8934cda7f06c6024e.jpg],origin[dam],category[ladies_shirtsblouses_linenshirts],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"오버사이즈 리넨 셔츠",
+      "price":"39,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "shirts",
+      "clothes": "shirts",
+      "disc" : "비스코스 소재의 반소매 패턴 셔츠. 캠프 칼라. 버튼단이 없는 프렌치 프런트 스타일. 스트레이트 헴라인. 여유 있는 핏 - 넉넉한 핏으로 활동이 편안한 스트레이트 라인.",
+      "pit" : "여유 있는 핏",
+      "stability": "주의! 작은 부품이 탈락되면 삼킬 수 있음",
+      "prdnum" : "0656677035"
+    },
+    {
+      "id":15,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/8a/4c/8a4c187e559317de329cd6f42d076d79525df888.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"Short-sleeved shirts",
+      "price":"29,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "shirts",
+      "clothes": "shirts",
+      "disc" : "비스코스 소재의 반소매 패턴 셔츠. 캠프 칼라. 버튼단이 없는 프렌치 프런트 스타일. 스트레이트 헴라인. 여유 있는 핏 - 넉넉한 핏으로 활동이 편안한 스트레이트 라인.",
+      "pit" : "여유 있는 핏",
+      "stability": "주의! 작은 부품이 탈락되면 삼킬 수 있음",
+      "prdnum" : "5213421421"
+    },
+    {
+      "id":16,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/b8/67/b8676aae0d11b3b374a8796bd358e35b9d67fc2a.jpg],origin[dam],category[ladies_shirtsblouses_shirts],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"리넨 캠프 셔츠",
+      "price":"34,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "shirts",
+      "clothes": "shirts",
+      "disc" : "비스코스 소재의 반소매 패턴 셔츠. 캠프 칼라. 버튼단이 없는 프렌치 프런트 스타일. 스트레이트 헴라인. 여유 있는 핏 - 넉넉한 핏으로 활동이 편안한 스트레이트 라인.",
+      "pit" : "여유 있는 핏",
+      "stability": "주의! 작은 부품이 탈락되면 삼킬 수 있음",
+      "prdnum" : "1512512531"
+    },
+    {
+      "id":17,
+      "img":"https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd8%2F78%2Fd8781131de33c6f7598fbeb843df06956f269756.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "title":"9부 리넨 팬츠",
+      "price":"29,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "pants",
+      "disc" : "리넨 소재의 하이웨이스트 팬츠. 릴랙스핏. 상단이 짧은 프릴로 장식된 허릿단에 고무밴드가 내장됨. 사선 방향의 옆면 포켓. 9부 길이의 와이드 레그.",
+      "pit" : "여유 있는 핏",
+      "stability": "겉감: 마 100%안감: 면 100%",
+      "prdnum" : "1512512531"
+    },
+    {
+      "id":18,
+      "img":"https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6b%2F8a%2F6b8a579c519705dc4ab3af8648f58215686dc55c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "title":"9부 리넨 팬츠(블랙)",
+      "price":"24,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "pants",
+      "disc" : "리넨 소재의 하이웨이스트 팬츠. 릴랙스핏. 상단이 짧은 프릴로 장식된 허릿단에 고무밴드가 내장됨. 사선 방향의 옆면 포켓. 9부 길이의 와이드 레그.",
+      "pit" : "여유 있는 핏",
+      "stability": "겉감: 마 100%안감: 면 100%",
+      "prdnum" : "1512512531"
+    },
+    {
+      "id":19,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/37/51/375113a72e5dad74326b6ccba705201dd29c960f.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[3]&call=url[file:/product/main]",
+      "title":"레귤러핏 더블 리넨 재킷",
+      "price":"114,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "jacket",
+      "disc" : "리넨과 비스코스 혼방 소재의 오버사이즈 원버튼 재킷. 노치트 라펠. 어깨 라인을 강조한 디자인. 가슴 포켓 장식. 플랩이 있는 앞면 웰트포켓. 안감 부착.",
+      "pit" : "오버사이즈",
+      "stability": "안감: 재생 폴리에스터 100%",
+      "prdnum" : "1063576001"
+    },
+    {
+      "id":20,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/93/43/9343b091a0de613d90bf2cc7edd5b273fa66bc41.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"더블 브레스티드 리넨 재킷",
+      "price":"144,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "jacket",
+      "disc" : "리넨과 비스코스 혼방 소재의 오버사이즈 원버튼 재킷. 노치트 라펠. 어깨 라인을 강조한 디자인. 가슴 포켓 장식. 플랩이 있는 앞면 웰트포켓. 안감 부착.",
+      "pit" : "오버사이즈",
+      "stability": "안감: 재생 폴리에스터 100%",
+      "prdnum" : "1063576001"
+    },
+    {
+      "id":21,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/d1/64/d1640ca2a6aedf9ae965d081a1eddd8b34e8401f.jpg],origin[dam],category[men_blazerssuits_blazers],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"슬림핏 리넨 재킷",
+      "price":"99,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "jacket",
+      "disc" : "리넨과 비스코스 혼방 소재의 오버사이즈 원버튼 재킷. 노치트 라펠. 어깨 라인을 강조한 디자인. 가슴 포켓 장식. 플랩이 있는 앞면 웰트포켓. 안감 부착.",
+      "pit" : "오버사이즈",
+      "stability": "안감: 재생 폴리에스터 100%",
+      "prdnum" : "1063576001"
+    },
+    {
+      "id":22,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/bf/86/bf8659577bd7ad0c328581f5491808fb3c618193.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"스키니핏 재킷",
+      "price":"79,000",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "jacket",
+      "disc" : "리넨과 비스코스 혼방 소재의 오버사이즈 원버튼 재킷. 노치트 라펠. 어깨 라인을 강조한 디자인. 가슴 포켓 장식. 플랩이 있는 앞면 웰트포켓. 안감 부착.",
+      "pit" : "오버사이즈",
+      "stability": "안감: 재생 폴리에스터 100%",
+      "prdnum" : "1063576001"
+    },
+    {
+      "id":23,
+      "img":"https://lp2.hm.com/hmgoepprod?set=source[/c2/e7/c2e7f04507c3b723587b6c2cf72fae440fd536fd.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title":"슬림핏 재킷",
+      "price":"114,900",
+      "choice":false,
+      "new":false,
+      "size":["S","M","L"],
+      "clothes": "jacket",
+      "disc" : "리넨과 비스코스 혼방 소재의 오버사이즈 원버튼 재킷. 노치트 라펠. 어깨 라인을 강조한 디자인. 가슴 포켓 장식. 플랩이 있는 앞면 웰트포켓. 안감 부착.",
+      "pit" : "오버사이즈",
+      "stability": "안감: 재생 폴리에스터 100%",
+      "prdnum" : "1063576001"
     }
   ]
 }
+

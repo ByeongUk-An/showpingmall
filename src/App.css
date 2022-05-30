@@ -135,6 +135,7 @@ ul,li {
 .card-wrap {
     width: 315px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 .card-wrap:hover {
     transform:scale(1.05);
@@ -180,4 +181,36 @@ ul,li {
 .product-img {
     display: flex;
     justify-content: flex-end;
+}
+.detail-container {
+    margin-bottom: 100px;
+}
+
+.detail-img {
+    width: 450px;
+}
+.pit {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.buy-btn {
+    margin-top: 30px;
+}
+
+.product-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.product-price {
+    font-weight: bold;
+}
+.product-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+.menu-list {
+    text-transform: capitalize;
 }

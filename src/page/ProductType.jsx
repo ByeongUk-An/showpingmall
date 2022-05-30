@@ -1,30 +1,29 @@
-import React, {useEffect,useState} from 'react';
-import ProductCard from "../component/ProductCard";
-import {Container,Row,Col} from "react-bootstrap";
+import React,{useState,useEffect} from 'react';
 import {useSearchParams} from "react-router-dom";
+import {Col, Container, Row} from "react-bootstrap";
+import ProductCard from "../component/ProductCard";
 
 
 
-const ProductAll = ({isLoggedIn}) => {
+const ProductType = ({isLoggedIn}) => {
     const [productList,setProductList] = useState([]);
-    const [query, setQuery] = useSearchParams();
+    const [type,setType] = useSearchParams();
 
     const getProducts = async () => {
-        let searchQuery = query.get('q') || "";
+        let searchQuery = type.get('type') || "";
         let url = `http://localhost:5000/products?q=${searchQuery}`;
         let response = await fetch(url);
         let data = await response.json();
         setProductList(data);
+        console.log(data,"ddd");
     }
-
 
     useEffect(() => {
         getProducts();
-    }, [query]);
+    }, [type]);
 
 
-
-    return (
+    return(
         <>
             <Container>
 
@@ -37,9 +36,8 @@ const ProductAll = ({isLoggedIn}) => {
 
                 </Row>
             </Container>
-
         </>
     )
 }
 
-export default ProductAll;
+export default ProductType;

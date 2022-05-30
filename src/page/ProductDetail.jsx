@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import {useParams} from "react-router-dom";
-import {Container,Row,Col} from "react-bootstrap";
+import {Container,Row,Col,Form,Button} from "react-bootstrap";
 
 
 const ProductDetail = () => {
@@ -20,14 +20,36 @@ const ProductDetail = () => {
     },[])
     return (
         <>
-            <Container>
+            <Container className="detail-container">
                 <Row>
                     <Col className="product-img">
-                        <img src={product && product.img} alt=""/>
+                        <img className="detail-img" src={product && product.img} alt={product && product.title}/>
                     </Col>
-                    <Col>
-                        <div>{product && product.title}</div>
-                        <div>{product && product.price}</div>
+                    <Col className="product-contents">
+                        <div className="product-title">{product && product.title}</div>
+                        <div className="product-price"><span>가격 : </span> {product && product.price}</div>
+                        <div>
+
+                            <p><span className="pit">제품설명 :</span>{product && product.disc}</p>
+                            <p><span className="pit">Pit :</span>{product && product.pit}</p>
+                            <p><span className="pit">안정성 :</span>{product && product.stability}</p>
+                            <p><span className="pit">상품번호 :</span>{product && product.prdnum}</p>
+                        </div>
+                        <Form.Select aria-label="Default select example">
+                            <option>사이즈 선택</option>
+
+                            {product && product.size.map((size,index)=> {
+                                return <option value={index}>{size}</option>
+                            })}
+                        </Form.Select>
+                        <div className="d-grid gap-2 buy-btn">
+                            <Button variant="primary" size="lg">
+                                장바구니 담기
+                            </Button>
+                            <Button variant="secondary" size="lg">
+                                구매하기
+                            </Button>
+                        </div>
                     </Col>
                 </Row>
             </Container>
