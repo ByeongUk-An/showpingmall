@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import {useSearchParams} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import ProductCard from "../component/ProductCard";
+import Qna from "./Qna";
 
 
 
@@ -29,9 +30,9 @@ const ProductType = ({isLoggedIn}) => {
 
                 <Row>
                     {productList.map((menu,index)=>(
-                        <Col lg={3} key={index}>
-                            <ProductCard item={menu} isLoggedIn={isLoggedIn}  />
-                        </Col>
+                            <Col lg={3} key={index}>
+                                <ProductCard item={menu} isLoggedIn={isLoggedIn}  />
+                            </Col>
                     ))}
 
                 </Row>

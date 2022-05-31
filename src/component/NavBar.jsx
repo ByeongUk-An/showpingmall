@@ -6,7 +6,7 @@ import {faSearch} from "@fortawesome/free-solid-svg-icons";
 import {authService} from "../fbase";
 
 const NavBar = ({isLoggedIn}) => {
-    const menuList = ["shirts","pants","dress","shoes","jacket","Q&A 게시판"];
+    const menuList = ["shirts","pants","dress","shoes","jacket","Q&A"];
     const navigate = useNavigate();
     const [clothes,setClothes] = useState("");
 
@@ -37,9 +37,13 @@ const NavBar = ({isLoggedIn}) => {
 
     const clothesParams = (event) => {
         let clothes = event.target.innerHTML;
-        if(clothes != "") {
+
+        if(clothes == "Q&amp;A") {
+            navigate(`/qna`)
+        }else if(clothes != "") {
             navigate(`/producttype/?type=${clothes}`)
         }
+
     }
 
     return(

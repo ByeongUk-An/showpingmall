@@ -23,7 +23,7 @@ const ProductDetail = () => {
             <Container className="detail-container">
                 <Row>
                     <Col className="product-img">
-                        <img className="detail-img" src={product && product.img} alt={product && product.title}/>
+                        <img className="detail-img" src={product.img} alt={product && product.title}/>
                     </Col>
                     <Col className="product-contents">
                         <div className="product-title">{product && product.title}</div>

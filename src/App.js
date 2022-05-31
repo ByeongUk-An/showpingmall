@@ -9,6 +9,8 @@ import ProductDetail from "./page/ProductDetail";
 import NavBar from "./component/NavBar";
 import ProductType from "./page/ProductType";
 import {authService} from "fbase";
+import Qna from "./page/Qna";
+import Board from "./page/Board";
 
 
 //1. 전체상품페이지, 로그인, 상품상세페이지 check
@@ -34,7 +36,7 @@ function App() {
       setInit(true);
     })
   }, []);
-  console.log("App",isLoggedIn)
+
   return (
     <>
     <NavBar isLoggedIn={isLoggedIn}/>
@@ -44,6 +46,8 @@ function App() {
       <Route path="/login" element={<Login isLoggedIn={isLoggedIn}/>}/>
       <Route path="/product/:id" element={<ProductDetail isLoggedIn={isLoggedIn} />}/>
       <Route path="/producttype" element={<ProductType isLoggedIn={isLoggedIn} />}/>
+      <Route path="/qna" element={<Qna isLoggedIn={isLoggedIn} />}/>
+      <Route path="/board" element={<Board isLoggedIn={isLoggedIn} />}/>
     </Routes>
     </>
   );
