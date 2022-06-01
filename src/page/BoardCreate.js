@@ -1,28 +1,22 @@
 import React,{useState,useEffect} from 'react';
 import {Col, Container, Row,Button} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
-import shortid from "shortid";
+import {dateFormat,datetimeFormat} from "../utils/dateutils";
 
 
-const Board = (props) => {
+const BoardCreate = (props) => {
     const navigate = useNavigate();
     const [data,setData] = useState([]);
     const [inputs,setInputs] = useState({
-        postId : "",
         name : "",
         contents : "",
         date : "",
         title : "",
+        datetime : "",
     });
 
 
-    //const shortid = require("shortid");
-    const today = new Date();
-    const year = today.getFullYear(); // 년도
-    const month = today.getMonth() + 1;  // 월
-    const currentDate = today.getDate();  // 날짜
-    const hours = today.getHours();
-    const date = year + `/` + month + `/` + currentDate + `/` ;
+
 
 
 
@@ -35,11 +29,11 @@ const Board = (props) => {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                postId: shortid.generate(),
                 name: inputs.name,
                 contents: inputs.contents,
-                date: new Date(),
+                date: dateFormat(new Date()),
                 title:inputs.title,
+                datetime: datetimeFormat(new Date()),
             }),
         })
         navigate("/qna")
@@ -49,11 +43,9 @@ const Board = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const id = e.target.name;
         const title = e.target.name;
         const contents = e.target.name;
         const author = e.target.name;
-
     }
 
     const handleOnChange = (e) => {
@@ -96,4 +88,4 @@ const Board = (props) => {
     )
 }
 
-export default Board;
+export default BoardCreate;

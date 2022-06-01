@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import {useSearchParams} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import ProductCard from "../component/ProductCard";
-import Qna from "./Qna";
+import QnaBoard from "./QnaBoard";
 
 
 
@@ -16,7 +16,7 @@ const ProductType = ({isLoggedIn}) => {
         let response = await fetch(url);
         let data = await response.json();
         setProductList(data);
-        console.log(data,"ddd");
+
     }
 
     useEffect(() => {

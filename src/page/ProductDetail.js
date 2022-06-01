@@ -23,7 +23,7 @@ const ProductDetail = () => {
             <Container className="detail-container">
                 <Row>
                     <Col className="product-img">
-                        <img className="detail-img" src={product.img} alt={product && product.title}/>
+                        <img className="detail-img" src={product && product.img} alt={product && product.title}/>
                     </Col>
                     <Col className="product-contents">
                         <div className="product-title">{product && product.title}</div>
@@ -39,7 +39,7 @@ const ProductDetail = () => {
                             <option>사이즈 선택</option>
 
                             {product && product.size.map((size,index)=> {
-                                return <option value={index}>{size}</option>
+                                return <option key={index} value={index}>{size}</option>
                             })}
                         </Form.Select>
                         <div className="d-grid gap-2 buy-btn">

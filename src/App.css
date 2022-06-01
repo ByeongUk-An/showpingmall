@@ -333,3 +333,38 @@ ul,li {
 .border-header-list:hover {
     background-color: beige;
 }
+.board-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.qna-wrap {
+    border: 1px solid black;
+
+}
+
+
+.board-detail-head {
+    font-weight: bold;
+}
+.board-detail-title,
+.board-detail-name,
+.board-detail-date {
+    border-bottom: 1px solid lightgray;
+    padding: 1em;
+
+}
+.board-detail-contents {
+    padding: 1em;
+    height: 427px;
+    overflow-y: auto;
+}
+.board-detail-btnwrap {
+    margin-top: 30px;
+}
+.board-detail-btn {
+    margin-right: 10px;
+}
+.board-detail-pre {
+
+}

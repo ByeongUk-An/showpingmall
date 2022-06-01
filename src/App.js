@@ -9,8 +9,9 @@ import ProductDetail from "./page/ProductDetail";
 import NavBar from "./component/NavBar";
 import ProductType from "./page/ProductType";
 import {authService} from "fbase";
-import Qna from "./page/Qna";
-import Board from "./page/Board";
+import QnaBoard from "./page/QnaBoard";
+import BoardCreate from "./page/BoardCreate";
+import QnaDetail from "./page/QnaDetail";
 
 
 //1. 전체상품페이지, 로그인, 상품상세페이지 check
@@ -46,8 +47,9 @@ function App() {
       <Route path="/login" element={<Login isLoggedIn={isLoggedIn}/>}/>
       <Route path="/product/:id" element={<ProductDetail isLoggedIn={isLoggedIn} />}/>
       <Route path="/producttype" element={<ProductType isLoggedIn={isLoggedIn} />}/>
-      <Route path="/qna" element={<Qna isLoggedIn={isLoggedIn} />}/>
-      <Route path="/board" element={<Board isLoggedIn={isLoggedIn} />}/>
+      <Route path="/qna" element={<QnaBoard isLoggedIn={isLoggedIn} />}/>
+      <Route path="/board" element={<BoardCreate isLoggedIn={isLoggedIn} />}/>
+      <Route path="/qna/:id" element={<QnaDetail isLoggedI={isLoggedIn} />}/>
     </Routes>
     </>
   );
