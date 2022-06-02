@@ -11,7 +11,7 @@ const BoardList = ({list,index}) => {
                 <Col lg={7}><p className="contents">{list.title}</p></Col>
                 <Col lg={2}><p className="list">{list.name}</p></Col>
                 <Col lg={1}><p className="list">{list.date}</p></Col>
-                <Col lg={1}><p className="list">3</p></Col>
+                <Col lg={1}><p className="list">{list.view}</p></Col>
             </li>
         </>
     )

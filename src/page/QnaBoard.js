@@ -18,6 +18,8 @@ const QnaBoard = (props) => {
     }
 
 
+
+
     useEffect(() => {
         getProducts();
     }, []);
@@ -41,7 +43,7 @@ const QnaBoard = (props) => {
                             </div>
                             <ul className="board-container">
                             {productList && productList.map((list,index)=> {
-                                return <BoardList list={list} index={index} />
+                                return <BoardList key={index} list={list} index={index} />
                             })}
                             </ul>
 

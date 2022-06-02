@@ -7,17 +7,36 @@ import {Container,Row,Col,Form,Button} from "react-bootstrap";
 const QnaDetail = (props) => {
     let {id} = useParams();
     const[board,setBoard] = useState(null);
-
+    let url = `http://localhost:5000/board/${id}`;
     const getBoardDetail = async ()=> {
-        let url = `http://localhost:5000/board/${id}`;
-        let response = await fetch(url);
-        let data = await response.json();
-        setBoard(data);
+        const response = await fetch(url);
 
+        const data = await response.json();
+        return data;
     }
 
+    const getView = async (data) => {
+
+        const response = await fetch(url,{
+            method: "PATCH",
+            body: JSON.stringify({
+                ...data,
+                view : data.view + 1
+            }),
+            headers: {
+                "Content-type": "application/json"
+            }
+        });
+        const item = await response.json();
+        
+        setBoard(item);
+    };
+
     useEffect(()=> {
-        getBoardDetail();
+        getBoardDetail().then((data)=> {
+            getView(data);
+
+        })
     },[])
 
     return (

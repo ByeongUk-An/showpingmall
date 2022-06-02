@@ -7,12 +7,14 @@ import {dateFormat,datetimeFormat} from "../utils/dateutils";
 const BoardCreate = (props) => {
     const navigate = useNavigate();
     const [data,setData] = useState([]);
+    const [view,setView] = useState(0);
     const [inputs,setInputs] = useState({
         name : "",
         contents : "",
         date : "",
         title : "",
         datetime : "",
+        view : "",
     });
 
 
@@ -34,6 +36,7 @@ const BoardCreate = (props) => {
                 date: dateFormat(new Date()),
                 title:inputs.title,
                 datetime: datetimeFormat(new Date()),
+                view : 0
             }),
         })
         navigate("/qna")
