@@ -15,6 +15,7 @@ const BoardCreate = (props) => {
         title : "",
         datetime : "",
         view : "",
+        password : "",
     });
 
 
@@ -36,7 +37,8 @@ const BoardCreate = (props) => {
                 date: dateFormat(new Date()),
                 title:inputs.title,
                 datetime: datetimeFormat(new Date()),
-                view : 0
+                view : 0,
+                password: inputs.password
             }),
         })
         navigate("/qna")
@@ -49,6 +51,7 @@ const BoardCreate = (props) => {
         const title = e.target.name;
         const contents = e.target.name;
         const author = e.target.name;
+        const password = e.target.name;
     }
 
     const handleOnChange = (e) => {
@@ -75,6 +78,8 @@ const BoardCreate = (props) => {
                             <input type="text" placeholder="제목을 작성해주세요." className="form-input" name="title"/>
                             <label className="form-label">작성자</label>
                             <input type="text" placeholder="이름을 작성해주세요." className="form-input" name="name"/>
+                            <label className="form-label">패스워드</label>
+                            <input type="text" placeholder="패스워드를 작성해주세요." className="form-input" name="password"/>
                             <label className="form-label">내용</label>
                             <textarea className="form-textarea" placeholder="게시글을 작성해주세요." name="contents" />
 

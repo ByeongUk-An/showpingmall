@@ -2,16 +2,19 @@ import React,{useEffect, useState} from 'react';
 import {Col, Container, Row,Button} from "react-bootstrap";
 import {useNavigate} from "react-router-dom"
 import BoardList from "../component/BoardList";
-
+import Pagination from "../component/Pagination";
 
 
 const QnaBoard = (props) => {
     const navigate = useNavigate();
     const [productList,setProductList] = useState([]);
+    const [currentPage,setCurrentPage] = useState(1); // 현재페이지 위치
+    const [limit,setLimit] = useState(10);  // 페이지 당 게시물 수
+    const offset = (currentPage - 1) * limit;
 
 
     const getProducts = async () => {
-        const url = `http://localhost:5000/board`;
+        const url = `http://localhost:5000/board?_sort=id&_order=DESC`;
         const response = await fetch(url);
         const data = await response.json();
         setProductList(data);
@@ -42,11 +45,12 @@ const QnaBoard = (props) => {
                                 <Col lg={1}><p className="list">조회수</p></Col>
                             </div>
                             <ul className="board-container">
-                            {productList && productList.map((list,index)=> {
-                                return <BoardList key={index} list={list} index={index} />
-                            })}
-                            </ul>
+                                {productList && productList.slice(offset,offset+limit).map((list,index)=> {
 
+                                    return <BoardList key={index} list={list} index={productList.length - index}  />
+                                })}
+                            </ul>
+                            <Pagination total={productList.length} limit={limit} currentPage={currentPage} setCurrentPage={setCurrentPage}  />
 
                         </div>
                         <Col lg={12} className="board-btn-wrap">

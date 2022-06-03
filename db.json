@@ -475,154 +475,64 @@
   ],
   "board": [
     {
-      "name": "벌꿀",
-      "contents": "테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다테스트입니다",
-      "date": "2022-06-01",
-      "title": "벌꿀오소리",
-      "datetime": "2022-06-01-19:13:04",
+      "name": "dd",
+      "contents": "dd",
+      "date": "2022-06-03",
+      "title": "dd",
+      "datetime": "2022-06-03-07:28:01",
+      "view": 13,
+      "password": "",
       "id": 1
     },
     {
-      "name": "22",
-      "contents": "board-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-preboard-detail-pre",
-      "date": "2022-06-01",
-      "title": "테스트2",
-      "datetime": "2022-06-01-19:15:46",
+      "name": "ㅁㅈㄹㄷ",
+      "contents": "ㅇ",
+      "date": "2022-06-03",
+      "title": "ㅈㅁㄷㄹ",
+      "datetime": "2022-06-03-08:42:18",
+      "view": 7,
+      "password": "",
       "id": 2
     },
     {
-      "name": "테스트3",
-      "contents": "테스트3",
-      "date": "2022-06-01",
-      "title": "테스트3",
-      "datetime": "2022-06-01-19:22:10",
+      "name": "안녕",
+      "contents": "ㅇㅇ",
+      "date": "2022-06-03",
+      "title": "안녕",
+      "datetime": "2022-06-03-08:53:04",
+      "view": 0,
+      "password": "",
       "id": 3
     },
     {
-      "name": "테스트4",
-      "contents": "테스트4",
-      "date": "2022-06-01",
-      "title": "테스트4",
-      "datetime": "2022-06-01-19:22:20",
+      "name": "흑",
+      "contents": "ㅇㅇ",
+      "date": "2022-06-03",
+      "title": "제먹",
+      "datetime": "2022-06-03-08:54:17",
+      "view": 0,
+      "password": "",
       "id": 4
     },
     {
-      "name": "테스트5",
-      "contents": "테스트5",
-      "date": "2022-06-01",
-      "title": "테스트5",
-      "datetime": "2022-06-01-19:22:26",
+      "name": "ㅇㅇ",
+      "contents": "ㅇㅇ",
+      "date": "2022-06-03",
+      "title": "ㅁㅁ",
+      "datetime": "2022-06-03-08:55:23",
+      "view": 0,
+      "password": "",
       "id": 5
     },
     {
-      "name": "테스트6",
-      "contents": "테스트6",
-      "date": "2022-06-01",
-      "title": "테스트6",
-      "datetime": "2022-06-01-19:22:31",
+      "name": "ㅇㅇ",
+      "contents": "ㅇ",
+      "date": "2022-06-03",
+      "title": "ㅇㅇ",
+      "datetime": "2022-06-03-08:55:39",
+      "view": 0,
+      "password": "",
       "id": 6
-    },
-    {
-      "name": "테스트7",
-      "contents": "테스트7",
-      "date": "2022-06-01",
-      "title": "테스트7",
-      "datetime": "2022-06-01-19:22:40",
-      "id": 7
-    },
-    {
-      "name": "테스트8",
-      "contents": "테스트8",
-      "date": "2022-06-01",
-      "title": "테스트8",
-      "datetime": "2022-06-01-19:22:46",
-      "id": 8
-    },
-    {
-      "name": "테스트9",
-      "contents": "테스트9",
-      "date": "2022-06-01",
-      "title": "테스트9",
-      "datetime": "2022-06-01-19:22:53",
-      "id": 9
-    },
-    {
-      "name": "테스트10",
-      "contents": "테스트10",
-      "date": "2022-06-01",
-      "title": "테스트10",
-      "datetime": "2022-06-01-19:22:59",
-      "id": 10
-    },
-    {
-      "name": "테스트11",
-      "contents": "테스트11",
-      "date": "2022-06-01",
-      "title": "테스트11",
-      "datetime": "2022-06-01-19:23:05",
-      "id": 11
-    },
-    {
-      "name": "테스트12",
-      "contents": "테스트12",
-      "date": "2022-06-01",
-      "title": "테스트12",
-      "datetime": "2022-06-01-19:23:12",
-      "id": 12
-    },
-    {
-      "name": "qq",
-      "contents": "qq",
-      "date": "2022-06-02",
-      "title": "qq",
-      "datetime": "2022-06-02-17:23:11",
-      "view": 0,
-      "id": 13
-    },
-    {
-      "name": "qwdqwdqw",
-      "contents": "dqwdqwdqw",
-      "date": "2022-06-02",
-      "title": "adqwdqwd",
-      "datetime": "2022-06-02-17:23:31",
-      "view": 0,
-      "id": 14
-    },
-    {
-      "name": "zz",
-      "contents": "zz",
-      "date": "2022-06-02",
-      "title": "zz",
-      "datetime": "2022-06-02-17:24:02",
-      "view": 0,
-      "id": 15
-    },
-    {
-      "name": "vs",
-      "contents": "vs",
-      "date": "2022-06-02",
-      "title": "vs",
-      "datetime": "2022-06-02-17:24:23",
-      "view": 3,
-      "id": 16
-    },
-    {
-      "name": "zqzq",
-      "contents": "zqzq",
-      "date": "2022-06-02",
-      "title": "zqzqz",
-      "datetime": "2022-06-02-17:27:58",
-      "view": 4,
-      "id": 17
-    },
-    {
-      "name": "qsqs",
-      "contents": "qsqsq",
-      "date": "2022-06-02",
-      "title": "qsqs",
-      "datetime": "2022-06-02-17:29:48",
-      "view": 128,
-      "id": 18
     }
   ]
 }
