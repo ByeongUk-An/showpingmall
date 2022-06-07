@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81128e93-95ce-448e-9b61-89b7c70de0af" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/BoardCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/BoardCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/ProductAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/ProductAll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/ProductDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/ProductDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/ProductType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/ProductType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/QnaBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/QnaBoard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/QnaDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/QnaDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654564343502</updated>
-      <workItem from="1654564347036" duration="532000" />
+      <workItem from="1654564347036" duration="930000" />
     </task>
     <servers />
   </component>
