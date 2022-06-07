@@ -4,7 +4,7 @@ import {createUserWithEmailAndPassword,signInWithEmailAndPassword,getAuth,Google
 import {authService} from "../fbase";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
-import {faGoogle,faGithub} from "@fortawesome/free-brands-svg-icons";
+// import {faGoogle,faGithub} from "@fortawesome/free-brands-svg-icons";
 // import { GoogleLoginButton,GithubLoginButton } from "react-social-login-buttons";
 import {useNavigate} from "react-router-dom";
 
