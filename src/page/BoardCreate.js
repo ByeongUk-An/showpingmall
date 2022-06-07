@@ -25,7 +25,7 @@ const BoardCreate = (props) => {
 
 
     const createBoard = async () => {
-        let url = `http://localhost:5000/board`;
+        let url = `https://my-json-server.typicode.com/ByeongUk-An/showpingmall/board`;
         const response= await fetch(url,{
             method: "POST",
             headers: {

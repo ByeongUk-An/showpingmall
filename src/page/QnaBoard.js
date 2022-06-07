@@ -14,7 +14,7 @@ const QnaBoard = (props) => {
 
 
     const getProducts = async () => {
-        const url = `http://localhost:5000/board?_sort=id&_order=DESC`;
+        const url = `https://my-json-server.typicode.com/ByeongUk-An/showpingmall/board?_sort=id&_order=DESC`;
         const response = await fetch(url);
         const data = await response.json();
         setProductList(data);

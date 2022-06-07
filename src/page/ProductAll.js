@@ -11,7 +11,7 @@ const ProductAll = ({isLoggedIn}) => {
 
     const getProducts = async () => {
         let searchQuery = query.get('q') || "";
-        let url = `http://localhost:5000/products?q=${searchQuery}`;
+        let url = `https://my-json-server.typicode.com/ByeongUk-An/showpingmall/products?q=${searchQuery}`;
         let response = await fetch(url);
         let data = await response.json();
         setProductList(data);

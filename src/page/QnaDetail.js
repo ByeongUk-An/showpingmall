@@ -10,7 +10,7 @@ const QnaDetail = (props) => {
     const navigate = useNavigate();
     const[board,setBoard] = useState(null);
 
-    const url = `http://localhost:5000/board/${id}`;
+    const url = `https://my-json-server.typicode.com/ByeongUk-An/showpingmall/board/${id}`;
 
     const getBoardDetail = async ()=> {
         const response = await fetch(url);
