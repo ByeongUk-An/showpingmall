@@ -8,7 +8,7 @@ import Login from "./page/Login";
 import ProductDetail from "./page/ProductDetail";
 import NavBar from "./component/NavBar";
 import ProductType from "./page/ProductType";
-import {authService} from "fbase";
+import {getAuth,onAuthStateChanged} from "firebase/auth"
 import QnaBoard from "./page/QnaBoard";
 import BoardCreate from "./page/BoardCreate";
 import QnaDetail from "./page/QnaDetail";
@@ -28,7 +28,8 @@ function App() {
   const [init,setInit] = useState(false);
   const [isLoggedIn,setIsLoggedIn] = useState(false);
   useEffect(() => {
-    authService.onAuthStateChanged((user)=>{
+    const authService = getAuth();
+    onAuthStateChanged(authService,(user)=>{
       if(user) {
         setIsLoggedIn(true);
       }else {
