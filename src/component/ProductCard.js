@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faArrowRight} from "@fortawesome/free-solid-svg-icons"
 
 const ProductCard = ({item,isLoggedIn}) => {
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ const ProductCard = ({item,isLoggedIn}) => {
                 <p className="product-clothes">{item && item.title}</p>
                 <div>
                     <span className="price">₩{item && item.price}</span>
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    {/*<FontAwesomeIcon icon={faArrowRight} />*/}
                     <span className="sale"></span>
                     <span className="discount">₩{item && item.discounted}</span>
 

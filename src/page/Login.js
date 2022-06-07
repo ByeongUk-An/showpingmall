@@ -2,10 +2,10 @@ import React,{useState} from 'react';
 import {Form,Button,Container} from "react-bootstrap"
 import {createUserWithEmailAndPassword,signInWithEmailAndPassword,getAuth,GoogleAuthProvider,GithubAuthProvider,signInWithPopup} from "firebase/auth"
 import {authService} from "../fbase";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
 import {faGoogle,faGithub} from "@fortawesome/free-brands-svg-icons";
-import { GoogleLoginButton,GithubLoginButton } from "react-social-login-buttons";
+// import { GoogleLoginButton,GithubLoginButton } from "react-social-login-buttons";
 import {useNavigate} from "react-router-dom";
 
 
@@ -95,8 +95,8 @@ const Login = ({isLoggedIn}) => {
 
                </Form>
                <div className="social-btn">
-                   <GoogleLoginButton onClick={()=>onSocialClick('google')} div="google"/>
-                   <GithubLoginButton onClick={()=>onSocialClick('github')} div="github"/>
+                   {/*<GoogleLoginButton onClick={()=>onSocialClick('google')} div="google"/>*/}
+                   {/*<GithubLoginButton onClick={()=>onSocialClick('github')} div="github"/>*/}
                </div>
                <ToastContainer/>
            </Container>

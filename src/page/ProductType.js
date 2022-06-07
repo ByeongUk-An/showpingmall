@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import {useSearchParams} from "react-router-dom";
 import {Col, Container, Row} from "react-bootstrap";
 import ProductCard from "../component/ProductCard";
-import QnaBoard from "./QnaBoard";
+
 
 
 
